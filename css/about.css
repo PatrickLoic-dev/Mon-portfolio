@@ -6,6 +6,7 @@ body{
     align-items: center;
     text-decoration: none;
     justify-content: center;
+    cursor: url(../assets/Whitecursor.png), auto;
 }
 
 .vs {
@@ -46,7 +47,7 @@ nav{
     font-weight: 450;
     line-height: normal;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 .link {
@@ -75,7 +76,7 @@ nav{
     font-weight: 450;
     line-height: normal;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 
@@ -87,7 +88,7 @@ nav{
     font-weight: 450;
     line-height: normal;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 /* Main */
@@ -109,7 +110,7 @@ main{
 .utilsbar img{
     margin-top: 33px;
     margin-bottom: 33px;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 .taskbar{
@@ -138,7 +139,7 @@ main{
     transform: rotate(-90deg);
     margin-right: 7.63px; 
     margin-left: 14.5px; 
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 .head img:hover{
@@ -149,7 +150,7 @@ main{
 .dropdown-btn{
     display: flex;
     align-items: center;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 .dropdown-btn img:nth-child(1):hover{
@@ -164,13 +165,13 @@ main{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 .dropdown-btn2{
     display: flex;
     align-items: center;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 .dropdown-btn2 img:nth-child(1):hover{
@@ -186,13 +187,13 @@ main{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 .dropdown-btn3{
     display: flex;
     align-items: center;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 .dropdown-btn3 img:nth-child(1):hover{
@@ -208,13 +209,13 @@ main{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 .dropdown-container {
   display: none;
   padding-left: 8px;
-  cursor: pointer;
+  cursor: url(../assets/mousePointer.png), auto;
 }
 
 .dropdown-container a {
@@ -228,7 +229,7 @@ main{
     margin-bottom: 8.01px;
     display: flex;
     align-items: center;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 
@@ -275,5 +276,5 @@ footer .logo>a{
     font-weight: 450;
     line-height: normal;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }

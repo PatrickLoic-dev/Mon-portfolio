@@ -5,6 +5,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: url(../assets/Whitecursor.png), auto;
 }
 
 .vs {
@@ -45,7 +46,7 @@ nav{
     font-weight: 450;
     line-height: normal;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 .link {
@@ -74,7 +75,7 @@ nav{
     font-weight: 450;
     line-height: normal;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 
@@ -86,7 +87,7 @@ nav{
     font-weight: 450;
     line-height: normal;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
 
 /* Main */
@@ -270,5 +271,5 @@ footer .logo>a{
     font-weight: 450;
     line-height: normal;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url(../assets/mousePointer.png), auto;
 }
