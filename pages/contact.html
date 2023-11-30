@@ -93,11 +93,11 @@
           <div class="form">
             <form action="" method="post">
                 <label for="name" style="margin-top: 115.27px; margin-bottom: 10px;"> _name: </label>
-                <input type="text" name="name" id="" />
+                <input type="text" name="name" id="name" />
                 <label for="email" style="margin-top: 24px; margin-bottom: 10px;"> _email: </label>
-                <input type="email" name="name" id="" />
+                <input type="email" name="name" id="email" />
                 <label for="message" style="margin-top: 24px; margin-bottom: 10px;"> _message: </label>
-                <textarea name="message" id="" cols="30" rows="10" style="margin-bottom: 24px;"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" style="margin-bottom: 24px;"></textarea>
                 <input type="submit" value="submit-message" />
               </form>
   
@@ -125,12 +125,10 @@
                     <span style="color: #C98BDF;">const</span> <span style="color: #5565E8;">button</span> <span style="color: #C98BDF;">=</span> <span style="color: #5565E8;">document.querySelector</span>(<span style="color: #FEA55F;">'#sendBtn'</span>);
                     <br>
                     <br><span style="color: #C98BDF;">const</span> <span style="color: #5565E8;">message</span> <span style="color: #C98BDF;">=</span> {
-                    <br><span style="color: #5565E8;">name</span>: <span style="color: #FEA55F;">"Jonathan Davis"</span>,
-                    <br><span style="color: #5565E8;">email</span>: <span style="color: #FEA55F;">"jonathan-davis@gmail.com"</span>,
-                    <br><span style="color: #5565E8;">message</span>: <span style="color: #FEA55F;">"Hey! Just checked your website and it</span>
-                    <br><span style="color: #FEA55F;">looks awesome! Also, I checked your article on </span>
-                    <br><span style="color: #FEA55F;">Medium. Learned a few nice tips. Thanks!",</span>
-                    <br>date: <span style="color: #FEA55F;">"Thursday 21 April"</span>
+                    <br><span style="color: #5565E8;">name</span>: <span style="color: #FEA55F;">"</span><span style="color: #FEA55F;" class="name_content">John Doe</span><span style="color: #FEA55F;">"</span>,
+                    <br><span style="color: #5565E8;">email</span>: <span style="color: #FEA55F;">"</span><span style="color: #FEA55F;" class="mail_content">johndoe@gmail.com</span><span style="color: #FEA55F;">"</span>,
+                    <br><span style="color: #5565E8;">message</span>: <span style="color: #FEA55F;">"</span><span style="color: #FEA55F; overflow-wrap: break-word;" class="message_content">Enter something...</span><span style="color: #FEA55F;">"</span>
+                    <br>date: <span style="color: #FEA55F;"><span style="color: #FEA55F;">"</span><span style="color: #FEA55F;" id="dateDisplay"></span><span style="color: #FEA55F;">"</span>
                     <br> }
                     <br>
                     <br><span style="color: #5565E8;">button.addEventListener</span>('click', () <span style="color: #C98BDF;">=></span> {
@@ -166,5 +164,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="../js/contact.js"></script>
   </body>
 </html>
