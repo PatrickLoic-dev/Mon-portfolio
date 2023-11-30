@@ -13,6 +13,31 @@ body{
     user-select: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 26px;
+    border: 1px solid #1E2D3D;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #011627;
+    border: 1px solid #1E2D3D;
+  }
+
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #607B96;
+    width: 18.5px;
+    height: 7px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #607B96;
+  }
+
 .vs {
     margin: 69px 69px 69px 69px;
     width: 1782px;
@@ -110,158 +135,198 @@ main{
     height: 830.81px;
     width: 1782px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
 }
 
-.section-1{
+.filter{
+    width: 311px;
+    height: 830.81px;
+    border-right: 1px solid #1E2D3D;
     display: flex;
     flex-direction: column;
 }
 
-.section-1 p:nth-child(1){
-    color: #E5E9F0;
-    font-family: 'Fira Code', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-    margin: 0;
+.projects{
+    width: 1471px;
+    height: 830.81px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
-.section-1 p:nth-child(2){
-    color: #E5E9F0;
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container p{
+    color: #607B96;
     font-family: 'Fira Code', sans-serif;
-    font-size: 62px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0;
-}
-.section-1 {
-    color: #4D5BCE;
-    font-family: 'Fira Code', sans-serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-    margin-top: 0;
-    margin-bottom: 81.07px;
-}
-.section-1 p:nth-child(4){
-    color: #607B96;
-    font-family: 'Fira Code', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-    margin-bottom: 9.67px;
-}
-.section-1 p:nth-child(5){
-    color: #607B96;
-    font-family: 'Fira Code', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-    margin-top: 0;
-    margin-bottom: 9.67px;
-}
-.section-1 p:nth-child(6){
-    font-family: 'Fira Code', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-    margin: 0;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 19.87px;
+    left: 22px; 
+    width: 18.812px;
+    height: 18.812px;
+    background-color: #eee;
+    border-radius: 2px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #607B96;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+.folder{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 40.6px;
+    border-bottom: 1px solid #1E2D3D;
     color: #FFF;
-}
-
-.section-1 p:nth-child(6) span:nth-child(1){
-    color: #4D5BCE;
-font-family: 'Fira Code', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
-
-.section-1 p:nth-child(6) span:nth-child(2){
-    color: #43D9AD;
     font-family: 'Fira Code', sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
 }
 
-.section-1 p:nth-child(6) a{
-    color: #E99287;
-    font-family: 'Fira Code', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration: none;
+.folder img {
+    margin-right: 7.63px; 
+    margin-left: 14.5px; 
     cursor: url(../assets/mousePointerSmall.png), auto;
 }
 
-.section-1 p:nth-child(6) a::after{
-    content: "";
-    position: absolute;
-    bottom: 420px;
-    left: 555px;
-    height: 3px;
-    width: 321.7px;
-    background: #E99287;
-    border-radius: 50px;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.2s;
-}
-
-.section-1 p:nth-child(6) a:hover::after{
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
-.circle{
-    background-color: #43D9AD;
-    opacity: 0.4;
-    filter: blur(87px);
-    width: 454px;
-    height: 492px;
-    transform: rotate(-94.305deg);
-    flex-shrink: 0;
-    position: absolute;
-    top: 140px;
-    z-index: 1;
-}
-
-.circle2{
-    width: 454px;
-    height: 492px;
-    transform: rotate(13.508deg);
-    flex-shrink: 0;
-    background-color: #4D5BCE;
-    opacity: 0.4;
-    filter: blur(87px);
-    position: absolute;
-    right: 340px;
-    z-index: 2;
-}
-
-.slider{
-    margin-left: 110px;
+.projects{
+    display: flex;
 }
 
 .card{
-    width: 560px;
-    height: 182px;
+    width: 370.348px;
+    height: 314.817px;
     flex-shrink: 0;
-    background: url(../assets/code-snippet2.svg), lightgray 100% / cover no-repeat;
-    border-radius: 14px;
-    z-index: 1000;
+    border-radius: 15px;
+    border: 1px solid #1E2D3D;
+    background: #011221;
+    margin-right: 40.65px;
 }
+
+.item p{
+    color: #607B96;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.item p span{
+    color: #5565E8;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.projects> .cards{
+    /*margin-top: 115.18px;*/
+    margin-left: 127.65px;
+    width: 1300px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+}
+
+.tab{
+    height: 40.6px;
+    width: 100%;
+    border-bottom: 1px solid #1E2D3D;
+}
+
+.element{
+display: flex;
+width: 188.48px;
+height: 40.6px;
+justify-content: space-between;
+align-items: center;
+border-right: 1px solid #1E2D3D;
+}
+
+.element p {
+    margin-left: 14.25px;
+    color: #607B96;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.element img{
+    margin-right: 12.13px;
+}
+
+
 
 
 

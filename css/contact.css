@@ -106,7 +106,6 @@ nav{
     transition: 0.2s ease-out;
 }
 
-
 /* Main */
 main{
     height: 830.81px;
@@ -114,24 +113,9 @@ main{
     display: flex;
 }
 
-.utilsbar{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid #1E2D3D;
-    padding-left: 24px;
-    padding-right: 20px;
-}
-
-.utilsbar img{
-    margin-top: 33px;
-    margin-bottom: 33px;
-    cursor: url(../assets/mousePointerSmall.png), auto;
-}
-
 .taskbar{
     height: 100%;
-    width: 243px;
+    width: 310px;
     display: flex;
     flex-direction: column;
     border-right: 1px solid #1E2D3D;
@@ -162,6 +146,7 @@ main{
     transform: rotate(-0deg);
     transition: all 0.2s ease-in-out;
 }
+
 
 .dropdown-btn{
     display: flex;
@@ -283,29 +268,138 @@ main{
     margin-bottom: 14px;
 }
 
-
-/* Main Editor */
 .editor{
-    display: flex;
-    flex-direction: row;
-}
-
-.me{
-    width: 1471px;
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.tab{
+.onglets{
     height: 40.6px;
     width: 100%;
     border-bottom: 1px solid #1E2D3D;
 }
 
+.tabContact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 167px;
+    height: 40.6px;
+    color: #607B96;
+    border-right: 1px solid #1E2D3D;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tabContact p{
+    margin-left: 14.25px;
+}
+
+.tabContact img{
+    margin-right: 11px;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+}
+
+.editor form{
+    width: 630px;
+    height: 794.27px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #1E2D3D;
+}
+
+.editor form input[type="text"], input[type="email"]{
+    width: 372px;
+    height: 41px;
+    flex-shrink: 0;
+    color: #465E77;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    border-radius: 8px;
+    margin-left: 128px;
+    border: 1px solid #1E2D3D;
+    background: #011221;
+    padding-left: 15px;
+}
+
+label{
+    color: #607B96;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    margin-left: 128px;
+}
+
+textarea{
+    resize: none;
+    margin-left: 128px;
+    width: 372px;
+    height: 145px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #607B96;
+    background: #011221;
+    box-shadow: 0px 0px 0px 2px rgba(96, 123, 150, 0.30);
+    color: #465E77;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+input[type="submit"]{
+    margin-left: 128px;
+    display: inline-flex;
+    padding: 10px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #1C2B3A;
+    border: none;
+    width: 146px;
+    height: 38px;
+    color: #FFF;
+    text-align: right;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    cursor: url(../assets/mousePointerSmall.png), auto;
+}
+
+input[type="submit"]:hover{
+    background: #15212c;
+    transition: .2s ease-in-out;
+}
+
+.context{
+    width: 841px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 115.87px;
+}
+
 .lines {
     display: flex;
-    margin-top: 17.9px;
 }
 
 .linenumbers{
@@ -324,6 +418,7 @@ main{
      margin: 0;
 }
 
+
 .text{
     color: #607B96;
     font-family: 'Fira Code', sans-serif;
@@ -332,6 +427,8 @@ main{
     font-weight: 450;
     line-height: 150%; /* 27px */
 }
+
+
 
 
 
