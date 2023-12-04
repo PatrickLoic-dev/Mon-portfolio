@@ -259,12 +259,64 @@ main{
 
 .card{
     width: 370.348px;
-    height: 314.817px;
+    height: 334.817px;
     flex-shrink: 0;
     border-radius: 15px;
     border: 1px solid #1E2D3D;
     background: #011221;
     margin-right: 40.65px;
+}
+
+.card .image{
+    width: 370.348px;
+    height: 145.44px;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 1px solid #1E2D3D;
+    background: url(../assets/image.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.card .image .language{
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    background: #86E1F9;
+    margin-top: 19px;
+    margin-right: 17.35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .image .language img{
+    height: 24px;
+    width: 24px;
+}
+
+.card p {
+    margin-left: 31px;
+    width: 304.691px;
+    margin-bottom: 21.82px;
+}
+
+.card a{
+    padding: 14px;
+    border-radius: 8px;
+    background: #1C2B3A;
+    color: #FFF;
+    text-align: right;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 31px;
 }
 
 .item p{
@@ -285,7 +337,7 @@ main{
     line-height: normal;
 }
 
-.projects> .cards{
+.projects> #cards{
     /*margin-top: 115.18px;*/
     margin-left: 127.65px;
     width: 1300px;

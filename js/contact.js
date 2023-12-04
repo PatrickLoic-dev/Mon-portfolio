@@ -36,5 +36,32 @@ inputEmail.onkeyup = function() {
 
     // Afficher la date dans le span avec l'ID "dateDisplay"
     document.getElementById('dateDisplay').innerHTML = formattedDate;
+
+
+
+
+
+
+    //Email sender
+    (function() {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init('rQ05_4g_j_PzCAVHL');
+  })();
+
+  //Email function
+  window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('31fdbmu', 'vccnnof', this)
+            .then(function() {
+                console.log('SUCCESS!');
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    });
+}
  
   
